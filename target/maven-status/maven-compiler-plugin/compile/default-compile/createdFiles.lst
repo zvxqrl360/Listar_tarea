@@ -1,0 +1,6 @@
+com\utp\app\taskmanager\rest\TaskController.class
+com\utp\app\taskmanager\services\TaskService.class
+com\utp\app\taskmanager\TaskBean.class
+com\utp\app\taskmanager\JakartaRestConfiguration.class
+com\utp\app\taskmanager\resources\JakartaEE10Resource.class
+com\utp\app\taskmanager\models\Task.class

@@ -1,0 +1,30 @@
+<?xml version='1.0' encoding='UTF-8' ?> 
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:p="http://primefaces.org/ui">
+
+    <h:head>
+        <title>Bienvenido a PrimeFaces</title>
+        <h:outputStylesheet library="primefaces" name="theme.css" />
+    </h:head>
+    <h:body>
+        <h:form>
+            <h:panelGrid columns="2" style="margin-bottom:10px;">
+                <h:outputLabel value="Nombre:" for="name" />
+                <h:inputText id="name" value="#{TaskBean.name}" />
+
+                <h:outputLabel value="Correo Electrónico:" for="email" />
+                <h:inputText id="email" value="#{TaskBean.email}" />
+
+                <h:outputLabel />
+                <h:commandButton value="Enviar" action="#{TaskBean.submit}" />
+            </h:panelGrid>
+        </h:form>
+
+        <h:messages globalOnly="true" />
+
+        <p:button value="Ir a Lista de Tareas" outcome="list_tasks" />
+    </h:body>
+
+</html>
